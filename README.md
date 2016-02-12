@@ -9,18 +9,19 @@ Usage
 
 * Install this package via PyPi or GitHub:
 
-    pip install thumbor_presets
-    pip install https://github.com/alexmorozov/thumbor-presets
+        pip install thumbor_presets
+        pip install https://github.com/alexmorozov/thumbor-presets
 * Add your common presets to your Thumbor config file:
 
-    :::python
-    PRESETS = {
-        'small_thumb': '250x100/smart/filters:grayscale(),watermark(/some/image.jpg)',
-    }
-* Specify a presets-aware app on Thumbor startup:
+        # thumbor.conf
+        PRESETS = {
+            'small_thumb': '250x100/smart/filters:grayscale(),watermark(/some/image.jpg)',
+        }
+* Start a Thumbor instance with a presets-aware app:
 
-    thumbor -a thumbor_presets.app.ThumborServiceApp
-* You're done! Access your presets the easy way:
+        thumbor -a thumbor_presets.app.ThumborServiceApp
+
+And you're done! Access your presets the easy way:
 
     curl http://thumbor_server.com/unsafe/preset/small_thumb/image.jpg
 
