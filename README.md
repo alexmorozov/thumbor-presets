@@ -31,6 +31,11 @@ And you're done! Access your presets the easy way:
 curl http://thumbor_server.com/unsafe/preset/small_thumb/image.jpg
 ````
 
+See also
+--------
+
+* The excellent [thumbor-community/shortener](https://github.com/thumbor-community/shortener) extension also allows you to shorten your urls, though a slightly different way.
+
 Requirements
 ------------
 
