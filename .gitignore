@@ -1,5 +1,6 @@
 *.pyc
 *.sw[op]
+/thumbor.conf
 /build/
 /dist/
 /thumbor_presets.egg-info/
