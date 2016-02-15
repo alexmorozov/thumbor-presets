@@ -14,7 +14,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 
 setup(
     name="thumbor_presets",
-    version='0.1.2',
+    version='0.1.3',
     url='http://github.com/alexmorozov/thumbor-presets',
     author='Alex Morozov',
     author_email='inductor2000@mail.ru',
