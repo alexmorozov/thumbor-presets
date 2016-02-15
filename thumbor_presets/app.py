@@ -9,7 +9,7 @@ from thumbor_presets.handlers import PresetHandler
 class ThumborServiceApp(StockApp):
     def get_handlers(self):
         reg = [
-            '',
+            '/',
             Url.unsafe_or_hash,
             r'preset/',
             r'(?P<preset>[\w\-_]+)/',
